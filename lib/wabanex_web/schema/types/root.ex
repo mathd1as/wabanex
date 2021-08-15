@@ -1,6 +1,7 @@
 defmodule WabanexWeb.Schema.Types.Root do
   use Absinthe.Schema.Notation
 
+  alias Crudry.Middlewares.TranslateErrors
   alias WabanexWeb.Resolvers.User, as: UserResolver
   alias WabanexWeb.Resolvers.Training, as: TrainingResolver
 
